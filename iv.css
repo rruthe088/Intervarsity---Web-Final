@@ -1,0 +1,124 @@
+/*    font-family: 'Slabo 27px', serif;
+  font-family: 'Roboto', sans-serif;
+*/
+#wrapper { margin-left: 8%; 
+        margin-right: 8%;
+        margin-top: 5%;
+        background-color: #fff;
+    border: solid 16px black;
+}
+body { background-image: url(images/iTook/winter.jpg);
+/*           background-repeat: no-repeat;*/
+       background-size: cover;
+       font-family: 'Roboto', sans-serif; 
+}
+header { text-align: center;
+         background-image: url(images/intervarsity-logos/InterVarsity%20Horizontal%20Logo_full.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 20vh;
+        background-color: #fff;
+        background-position: center;
+        padding-bottom: 1vh; padding-top: 1vh;
+
+}
+#blkln { background-color: black; height: 1px}
+#content { padding-left: 1vw;
+}
+
+h1, h2, h3 { font-family: 'Slabo 27px', serif;
+}
+h1 {font-size: 6vh; text-align: center;
+/*        color: #046b84;
+    */
+}
+h2 { font-size: 5vh;
+    color: #448;
+}
+h3 { font-size: 4vh; }
+h4 { font-size: 2.3vh;}
+p, li, ul { font-size: 2vh;}
+nav { font-size: 2.5vh; padding-top: .5vh; padding-bottom: .5vh;
+}
+nav li { display: inline; padding-left: 1vw;}
+nav ul { list-style-type: none;
+}
+nav a { text-decoration: none; color: black;}
+nav a:hover { color: white;}
+nav, footer { background-color: #ff661a;
+              text-align: center;
+}
+footer { padding-top: 1vh; padding-bottom: 1vh;}
+.column { width: 33%;
+        float: left;
+/*            padding: 1;*/
+        text-align: center;
+}
+blockquote { font-size: 1.8vh;
+}
+#event {margin-top: 5em;}
+float: left;
+ul li { list-style-type: circle;
+}
+ul li a { text-decoration: none; color: black;}
+ul li a:hover { color: white;}
+.column p { text-align: left;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        text-indent: 2vw;
+}
+#gallery { text-align: center;}
+/*    #space { height: 30vh;}*/
+.nobottom { margin-bottom: 0; }
+
+.image { border: solid 10px black;
+        height: 25vh; width: 15vw;
+}
+.nomargin {margin: 0;}
+img { height: 300; width: 400;}
+/*.gallery img {*/
+table { width: 100%;}
+table tr{ border: solid 3px purple;
+}
+table .title { background-color: #c8c8ca;}
+table td { border-right: solid 2px #c8c8ca; padding: 1em;}
+.time { text-align: right;
+    }
+/*Gallery*/
+    .gallery ul {list-style-type: none;
+        width: 300px; 
+    }
+    .gallery li { display: inline; 
+         float: left;
+         padding: 5px; 
+    }
+    .gallery img { border-style: none;
+    }
+    .gallery a { text-decoration: none;
+                 font-style: italic;  
+                 color: #eaeaea;
+    }
+    .gallery span { position: absolute;
+                    right: 10px;
+                    opacity: 0;
+                    color: black;
+    }
+    .gallery a:hover span {     
+                position: absolute;
+                top: 65vh;
+    /*            bottom: 1vh;*/
+                left: 20vh; 
+                text-align: center; 
+                opacity: 1;
+                right: -100px;
+    }
+    .gallery p { padding-top: 60vh;}
+@media only screen and (max-width: 64em) {
+/*    Gallery*/
+    .gallery { width: 40%;}
+    .gallery a:hover span {display: block; opacity: 0;}
+    .gallery {width: 100%;}
+    #galllery { width: 40%;}
+}
+@media only screen and (max-width:37.5em) {
+}
