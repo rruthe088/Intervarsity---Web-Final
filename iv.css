@@ -10,6 +10,7 @@
 body { background-image: url(images/iTook/winter.jpg);
 /*           background-repeat: no-repeat;*/
        background-size: cover;
+        background-position: fixed;
        font-family: 'Roboto', sans-serif; 
 }
 header { text-align: center;
@@ -19,7 +20,7 @@ header { text-align: center;
         height: 20vh;
         background-color: #fff;
         background-position: center;
-        padding-bottom: 1vh; padding-top: 1vh;
+        margin-bottom: 2%; margin-top: 2%;
 
 }
 #blkln { background-color: black; height: 1px}
@@ -29,15 +30,13 @@ header { text-align: center;
 h1, h2, h3 { font-family: 'Slabo 27px', serif;
 }
 h1 {font-size: 6vh; text-align: center;
-/*        color: #046b84;
-    */
 }
 h2 { font-size: 5vh;
     color: #448;
 }
 h3 { font-size: 4vh; }
 h4 { font-size: 2.3vh;}
-p, li, ul { font-size: 2vh;}
+table, p, li, ul { font-size: 2vh;}
 nav { font-size: 2.5vh; padding-top: .5vh; padding-bottom: .5vh;
 }
 nav li { display: inline; padding-left: 1vw;}
@@ -56,8 +55,8 @@ footer { padding-top: 1vh; padding-bottom: 1vh;}
 }
 blockquote { font-size: 1.8vh;
 }
-#event {margin-top: 5em;}
-float: left;
+#event {margin-top: 5em;
+}
 ul li { list-style-type: circle;
 }
 ul li a { text-decoration: none; color: black;}
@@ -115,10 +114,41 @@ table td { border-right: solid 2px #c8c8ca; padding: 1em;}
     .gallery p { padding-top: 60vh;}
 @media only screen and (max-width: 64em) {
 /*    Gallery*/
-    .gallery { width: 40%;}
-    .gallery a:hover span {display: block; opacity: 0;}
-    .gallery {width: 100%;}
-    #galllery { width: 40%;}
+    .gallery li { float: none;
+    }
+    .gallery ul { width: 100%;
+    }
+/*    .gallery {width:40%;}*/
+    .gallery a:hover span {display: block; opacity: 0;
+    }
+    .gallery {width: 100%;
+    }
+    .gallery img { width: 40%; height: 30vh;
+    }
+/*    Gallery Index*/
+    #gallery img { width: 40%;
+    }
+    #gallery {width: 100%;
+    }
+/*    Index*/
+    li a:hover {display:block;}
+    nav a:hover {display:block;}
+    nav li {display: block; padding-left: 0;}
+    nav ul {padding: 0; margin-bottom: -1vh; margin-top: -.1vh}
+    main nav li {border-bottom: solid .5vh; padding: 1vh;}
 }
 @media only screen and (max-width:37.5em) {
+/*    Gallery*/
+    .gallery img {width:80%;
+    }
+    .gallery li{float: none;
+    }
+    #gallery img { width: 80%; height: 60vh;border: solid 2vh;}
+/*    .column { float: none;*/
+    }
+/*    .column {float: none;}*/
+    .column p { font-size: 1.7vh;}
+    blockquote { font-size: 1.5vh; margin-left: 1vw; margin-right: 1vw;
+    }
+.column {display:block;}
 }
